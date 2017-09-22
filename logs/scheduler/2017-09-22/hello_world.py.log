@@ -1,0 +1,52 @@
+[2017-09-22 17:25:09,256] {jobs.py:343} DagFileProcessor0 INFO - Started process (PID=1715) to work on /Users/geoffrey.kip/airflow/dags/hello_world.py
+[2017-09-22 17:25:09,260] {jobs.py:534} DagFileProcessor0 ERROR - Cannot use more than 1 thread when using sqlite. Setting max_threads to 1
+[2017-09-22 17:25:09,261] {jobs.py:1521} DagFileProcessor0 INFO - Processing file /Users/geoffrey.kip/airflow/dags/hello_world.py for tasks to queue
+[2017-09-22 17:25:09,261] {models.py:167} DagFileProcessor0 INFO - Filling up the DagBag from /Users/geoffrey.kip/airflow/dags/hello_world.py
+[2017-09-22 17:25:09,361] {jobs.py:1535} DagFileProcessor0 INFO - DAG(s) dict_keys(['hello_world']) retrieved from /Users/geoffrey.kip/airflow/dags/hello_world.py
+[2017-09-22 17:25:09,391] {jobs.py:1169} DagFileProcessor0 INFO - Processing hello_world
+[2017-09-22 17:25:09,429] {jobs.py:1173} DagFileProcessor0 INFO - Created <DagRun hello_world @ 2017-09-21 12:00:00: scheduled__2017-09-21T12:00:00, externally triggered: False>
+[2017-09-22 17:25:09,432] {jobs.py:860} DagFileProcessor0 INFO - Examining DAG run <DagRun hello_world @ 2017-09-21 12:00:00: scheduled__2017-09-21T12:00:00, externally triggered: False>
+[2017-09-22 17:25:09,437] {models.py:4024} DagFileProcessor0 INFO - Updating state for <DagRun hello_world @ 2017-09-21 12:00:00: scheduled__2017-09-21T12:00:00, externally triggered: False> considering 2 task(s)
+/Users/geoffrey.kip/anaconda/envs/airflowenv/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+  for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2017-09-22 17:25:09,449] {jobs.py:566} DagFileProcessor0 INFO - Skipping SLA check for <DAG: hello_world> because no tasks in DAG have SLAs
+/Users/geoffrey.kip/anaconda/envs/airflowenv/lib/python3.6/site-packages/airflow/models.py:1140: DeprecationWarning: generator 'get_dep_statuses' raised StopIteration
+  dep_context):
+[2017-09-22 17:25:09,463] {models.py:1126} DagFileProcessor0 INFO - Dependencies all met for <TaskInstance: hello_world.dummy_task 2017-09-21 12:00:00 [None]>
+[2017-09-22 17:25:09,463] {jobs.py:1608} DagFileProcessor0 INFO - Creating / updating <TaskInstance: hello_world.dummy_task 2017-09-21 12:00:00 [scheduled]> in ORM
+[2017-09-22 17:25:09,471] {models.py:322} DagFileProcessor0 INFO - Finding 'running' jobs without a recent heartbeat
+[2017-09-22 17:25:09,471] {models.py:328} DagFileProcessor0 INFO - Failing jobs without heartbeat after 2017-09-22 17:20:09.471368
+[2017-09-22 17:25:09,475] {jobs.py:351} DagFileProcessor0 INFO - Processing /Users/geoffrey.kip/airflow/dags/hello_world.py took 0.219 seconds
+[2017-09-22 17:25:17,795] {jobs.py:343} DagFileProcessor2 INFO - Started process (PID=1719) to work on /Users/geoffrey.kip/airflow/dags/hello_world.py
+[2017-09-22 17:25:17,798] {jobs.py:534} DagFileProcessor2 ERROR - Cannot use more than 1 thread when using sqlite. Setting max_threads to 1
+[2017-09-22 17:25:17,800] {jobs.py:1521} DagFileProcessor2 INFO - Processing file /Users/geoffrey.kip/airflow/dags/hello_world.py for tasks to queue
+[2017-09-22 17:25:17,800] {models.py:167} DagFileProcessor2 INFO - Filling up the DagBag from /Users/geoffrey.kip/airflow/dags/hello_world.py
+[2017-09-22 17:25:17,891] {jobs.py:1535} DagFileProcessor2 INFO - DAG(s) dict_keys(['hello_world']) retrieved from /Users/geoffrey.kip/airflow/dags/hello_world.py
+[2017-09-22 17:25:17,924] {jobs.py:1169} DagFileProcessor2 INFO - Processing hello_world
+[2017-09-22 17:25:17,935] {jobs.py:860} DagFileProcessor2 INFO - Examining DAG run <DagRun hello_world @ 2017-09-21 12:00:00: scheduled__2017-09-21T12:00:00, externally triggered: False>
+[2017-09-22 17:25:17,943] {models.py:4024} DagFileProcessor2 INFO - Updating state for <DagRun hello_world @ 2017-09-21 12:00:00: scheduled__2017-09-21T12:00:00, externally triggered: False> considering 2 task(s)
+/Users/geoffrey.kip/anaconda/envs/airflowenv/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+  for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2017-09-22 17:25:17,957] {jobs.py:566} DagFileProcessor2 INFO - Skipping SLA check for <DAG: hello_world> because no tasks in DAG have SLAs
+/Users/geoffrey.kip/anaconda/envs/airflowenv/lib/python3.6/site-packages/sqlalchemy/sql/default_comparator.py:161: SAWarning: The IN-predicate on "dag_run.dag_id" was invoked with an empty sequence. This results in a contradiction, which nonetheless can be expensive to evaluate.  Consider alternative strategies for improved performance.
+  'strategies for improved performance.' % expr)
+/Users/geoffrey.kip/anaconda/envs/airflowenv/lib/python3.6/site-packages/airflow/models.py:1140: DeprecationWarning: generator 'get_dep_statuses' raised StopIteration
+  dep_context):
+[2017-09-22 17:25:17,969] {models.py:1126} DagFileProcessor2 INFO - Dependencies all met for <TaskInstance: hello_world.hello_task 2017-09-21 12:00:00 [None]>
+[2017-09-22 17:25:17,969] {jobs.py:1608} DagFileProcessor2 INFO - Creating / updating <TaskInstance: hello_world.hello_task 2017-09-21 12:00:00 [scheduled]> in ORM
+[2017-09-22 17:25:17,975] {models.py:322} DagFileProcessor2 INFO - Finding 'running' jobs without a recent heartbeat
+[2017-09-22 17:25:17,976] {models.py:328} DagFileProcessor2 INFO - Failing jobs without heartbeat after 2017-09-22 17:20:17.975996
+[2017-09-22 17:25:17,980] {jobs.py:351} DagFileProcessor2 INFO - Processing /Users/geoffrey.kip/airflow/dags/hello_world.py took 0.186 seconds
+[2017-09-22 17:25:32,023] {jobs.py:343} DagFileProcessor4 INFO - Started process (PID=1726) to work on /Users/geoffrey.kip/airflow/dags/hello_world.py
+[2017-09-22 17:25:32,026] {jobs.py:534} DagFileProcessor4 ERROR - Cannot use more than 1 thread when using sqlite. Setting max_threads to 1
+[2017-09-22 17:25:32,027] {jobs.py:1521} DagFileProcessor4 INFO - Processing file /Users/geoffrey.kip/airflow/dags/hello_world.py for tasks to queue
+[2017-09-22 17:25:32,028] {models.py:167} DagFileProcessor4 INFO - Filling up the DagBag from /Users/geoffrey.kip/airflow/dags/hello_world.py
+[2017-09-22 17:25:32,116] {jobs.py:1535} DagFileProcessor4 INFO - DAG(s) dict_keys(['hello_world']) retrieved from /Users/geoffrey.kip/airflow/dags/hello_world.py
+[2017-09-22 17:25:32,146] {jobs.py:1169} DagFileProcessor4 INFO - Processing hello_world
+[2017-09-22 17:25:32,164] {jobs.py:860} DagFileProcessor4 INFO - Examining DAG run <DagRun hello_world @ 2017-09-21 12:00:00: scheduled__2017-09-21T12:00:00, externally triggered: False>
+[2017-09-22 17:25:32,172] {models.py:4024} DagFileProcessor4 INFO - Updating state for <DagRun hello_world @ 2017-09-21 12:00:00: scheduled__2017-09-21T12:00:00, externally triggered: False> considering 2 task(s)
+[2017-09-22 17:25:32,175] {models.py:4070} DagFileProcessor4 INFO - Marking run <DagRun hello_world @ 2017-09-21 12:00:00: scheduled__2017-09-21T12:00:00, externally triggered: False> successful
+[2017-09-22 17:25:32,185] {jobs.py:566} DagFileProcessor4 INFO - Skipping SLA check for <DAG: hello_world> because no tasks in DAG have SLAs
+[2017-09-22 17:25:32,202] {models.py:322} DagFileProcessor4 INFO - Finding 'running' jobs without a recent heartbeat
+[2017-09-22 17:25:32,203] {models.py:328} DagFileProcessor4 INFO - Failing jobs without heartbeat after 2017-09-22 17:20:32.202999
+[2017-09-22 17:25:32,208] {jobs.py:351} DagFileProcessor4 INFO - Processing /Users/geoffrey.kip/airflow/dags/hello_world.py took 0.185 seconds
